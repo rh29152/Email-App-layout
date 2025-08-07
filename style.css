@@ -1,0 +1,88 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* global reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body styling  */
+body {
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    color: #343a40;
+    height: 100vh;
+
+    /* grid container  */
+    display: grid;
+    grid-template-columns: 80px 300px 1fr 250px;
+}
+
+
+.nav {
+    background-color: #343a40;
+    color: #fff;
+    grid-row: 1/-4;
+}
+
+.menu {
+    background-color: #7048e8;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    grid-column: 2/-1;
+
+}
+
+.menu-btn {
+    background-color: #5f3dc4;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-btn:last-child {
+    background-color: #d6336c;
+    margin-left: auto;
+}
+
+.inbox {
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    /* scroll enable  */
+    overflow: scroll;
+}
+
+.email {
+    background-color: #adb5bd;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.aside {
+    background-color: #e9ecef;
+}
+
+.text-align {
+    padding-top: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
